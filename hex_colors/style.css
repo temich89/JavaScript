@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@500&display=swap');
+
+body {
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  /*border: 1px solid black;*/
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hex-color{
+  /*border: 1px solid black;*/
+  text-align: center;
+}
+
+.hex-color h1{
+  font-size: 2rem;
+  text-transform: uppercase;
+  animation: colorchange 5s infinite alternate;
+}
+
+.hex-color h2{
+  /*border: 1px solid black;*/
+  font-size: 2rem;
+  margin-top: 5%
+}
+
+@keyframes colorchange {
+  0%{
+    color: indigo;
+  }
+  25%{
+    color: blue;
+  }
+  50%{
+    color: green;
+  }
+  75%{
+    color: yellow;
+  }
+  100%{
+    color: orange;
+  }
+}
+
+/*  http://mattkersley.com/responsive/ */
+@media(max-width:240px){
+  .hex-color h1{
+    font-size: 1rem;
+  }
+  .hex-color h2{
+    font-size: 0.5rem;
+  }
+}@media(max-width:480px){
+  .hex-color h1{
+    font-size: 1.5rem;
+  }
+  .hex-color h2{
+    font-size: 1.5rem;
+  }
+}

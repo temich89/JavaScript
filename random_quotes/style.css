@@ -1,0 +1,42 @@
+.body{
+  background: #B3CAA9;
+}
+
+.container{
+  /*border: 1px solid black;*/
+  width: 95%;
+  height: 40vh;
+  display: flex;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.quotes{
+  /*border: 1px solid black;*/
+  width: 900px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  color: gray;
+  background-color: #F1F3AF;
+  border: 10px solid #AFE2F5
+}
+
+.gen-btn{
+  text-align: center;
+
+}
+
+.quotes p, .quotes h3{
+  font-size: 1.5rem;
+}
+
+@media(max-width: 480px) {
+  .quotes p, .quotes h3{
+    font-size: 1rem;
+  }
+}
